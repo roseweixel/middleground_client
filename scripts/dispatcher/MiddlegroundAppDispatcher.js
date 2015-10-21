@@ -4,7 +4,7 @@ var assign = require('object-assign');
 
 var PayloadSources = MiddlegroundConstants.PayloadSources;
 
-var SmallAppDispatcher = assign(new Dispatcher(), {
+var MiddlegroundAppDispatcher = assign(new Dispatcher(), {
   handleServerAction: function(action) {
     var payload = {
       source: PayloadSources.SERVER_ACTION,

@@ -20,7 +20,7 @@ var Header = React.createClass({
       <ul className="right">
         <li className="has-dropdown">
           <a href="#">{this.props.email}</a>
-          <ul> className="dropdown">
+          <ul className="dropdown">
             <li>
               <a href="#" onClick={this.logout}>Logout</a>
             </li>
