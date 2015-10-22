@@ -148,3 +148,9 @@ gulp.task('build', ['clean'], function() {
 gulp.task('default', function() {
   console.log('Run "gulp watch or gulp build"');
 });
+
+// Handle errors
+function errorHandler (error) {
+  console.log(error.toString());
+  this.emit('end');
+}
